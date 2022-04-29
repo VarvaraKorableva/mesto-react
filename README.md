@@ -9,5 +9,4 @@ App that allows you to share photos!
 * Grid
 * JavaScript
 
-### try the app from the link 
-
+## Try the app from the link https://varvara-from-moscow.github.io/mesto-react/
