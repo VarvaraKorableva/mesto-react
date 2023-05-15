@@ -33,8 +33,8 @@ function EditProfilePopup({onClose, isOpen, onUpdateUser, showLoading}) {
   return (
     <PopupWithForm 
       name="popup-profile" 
-      title="Редактировать профиль"
-      submitName={showLoading ? 'Сохранение...' : 'Сохранить'}
+      title="Edit profile"
+      submitName={showLoading ? 'Preservation...' : 'Save'}
       isOpen={isOpen}
       onClose={onClose}
       onSubmit={handleSubmit}>
@@ -46,7 +46,7 @@ function EditProfilePopup({onClose, isOpen, onUpdateUser, showLoading}) {
           minLength="2"
           maxLength="40"
           className="popup__input"
-          placeholder="Имя" 
+          placeholder="Name" 
           value={name || ""} 
           onChange={handleNameChange}/>
         <span className="popup__error popup__error_visible name-error" />
@@ -58,7 +58,7 @@ function EditProfilePopup({onClose, isOpen, onUpdateUser, showLoading}) {
           minLength="2"
           maxLength="200"
           className="popup__input"
-          placeholder="Профессиональная деятельность" 
+          placeholder="Professional activity" 
           value={description || ""}
           onChange={handleDescriptionChange}/>
         <span className="popup__error popup__error_visible job-error" />

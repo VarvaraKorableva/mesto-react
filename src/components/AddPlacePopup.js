@@ -25,8 +25,8 @@ function AddPlacePopup({isOpen, onClose, onAddPlace, showLoading}) {
   return (
     <PopupWithForm 
       name="popup-AddPicture" 
-      title="Новое место"
-      submitName={showLoading ? 'Сохранение...' : 'Создать'}
+      title="New picture"
+      submitName={showLoading ? 'Preservation...' : 'Create'}
       isOpen={isOpen}
       onClose={onClose}
       onSubmit={handleSubmit}>
@@ -36,7 +36,7 @@ function AddPlacePopup({isOpen, onClose, onAddPlace, showLoading}) {
           type="text"
           minLength="2"
           maxLength="30"
-          placeholder="Название"
+          placeholder="Name"
           className="popup__input"
           required 
           value={name || ""}
@@ -46,7 +46,7 @@ function AddPlacePopup({isOpen, onClose, onAddPlace, showLoading}) {
           id="linkOfPicture"
           name="link"
           type="url"
-          placeholder="Ссылка на картинку"
+          placeholder="Link to picture"
           className="popup__input"
           required 
           value={link || ""}

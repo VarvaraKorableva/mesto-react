@@ -12,8 +12,8 @@ function DeletePopup({isOpen, onClose, showLoading, card, onCardDelete}) {
   return (
     <PopupWithForm 
       name="areYouSureToDelete"
-      title="Вы уверены?"
-      submitName={showLoading ? 'Удаление...' : 'Да'}
+      title="Are you sure you want to delete?"
+      submitName={showLoading ? 'Removal...' : 'Yes'}
       isOpen={isOpen}
       onClose={onClose}
       onSubmit={handleDeleteClick} />
